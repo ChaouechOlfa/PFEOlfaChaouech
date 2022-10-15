@@ -1,0 +1,495 @@
+%% @Author: CHAOUECH OLFA
+%  @Date:   2022-06
+%% @Class:  PFE de L DSI- Iset Rades, Tunisie.
+
+\documentclass[a4paper, oneside, 12pt, final]{extreport}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage[first=0,last=9]{lcg}
+\newcommand{\ra}{\rand0.\arabic{rand}}	
+\usepackage{color, colortbl}
+\usepackage{multirow}
+\usepackage{numprint}
+\usepackage{setspace}
+\onehalfspacing
+\parindent 0.5cm
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{tikzducks}
+\usepackage{floatflt}
+\pagestyle{fancy}
+\headsep=50pt
+\headheight=50pt
+\renewcommand\headrulewidth{1pt}
+\fancyhead[C]{}
+\fancyhead[L]{\leftmark }
+\fancyhead[R]{}
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[C]{\textbf{\thepage}} 
+\fancyfoot[L]{Chaouech Olfa}
+\fancyfoot[R]{2021-2022}
+\makeindex
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+
+\usepackage[lined,boxed,commentsnumbered, french, ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{exemple}{Example}[chapter]
+
+
+%\usepackage[nottoc]{tocbibind}
+\addcontentsline{toc}{section}{References}
+
+\providecommand{\keywords}[1]{\textbf{\textit{Mots clés---}} #1}
+\providecommand{\keywordss}[1]{\textbf{\textit{Keywords---}} #1}
+
+\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd{\thebibliography}{%
+%  \chapter*{\bibname}\@mkboth{\MakeUppercase\bibname}%{\MakeUppercase\bibname}}{%
+%  \section{References}}{}{}
+%\makeatother
+
+
+
+\usepackage[nottoc]{tocbibind}
+
+\textwidth 16cm
+\textheight 25cm
+\topmargin -3cm
+\oddsidemargin 1cm
+\usepackage{hyperref}
+% set font encoding for PDFLaTeX or XeLaTeX
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% documentation: http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+%\usepackage{sagetex}
+
+
+\newcommand{\reportTitle} {%
+  %\textsc{Graduation Project Report}
+  \textsc{ Projet de Fin d'Etudes}
+}
+\vspace{5pt}
+\newcommand{\reportAuthor} {%
+  Olfa \textsc{CHAOUECH}%
+}
+\vspace{5pt}
+\newcommand{\reportSubject} {%
+ Projet de Fin d'Etudes \\Système de Gestion des formations en ligne%
+}
+
+\newcommand{\dateSoutenance} {%
+  12/06/2022%
+}
+\vspace{5pt}
+\newcommand{\studyDepartment} {%
+  CNUDST %Statistique
+}
+\vspace{5pt}
+\newcommand{\ESSAI} {%
+  %Higher School of Statistics and Information Analysis
+  Institut Supérieur des
+  Études Technologiques de Rades
+  Département : Technologies de l’Informatique
+  
+}
+\vspace{5pt}
+%\newcommand{\codePFE} {% Reference
+%  Code PFE%
+%}
+
+\newcommand{\juryPresident} {%
+  \textbf{Encadrant entreprise}: \textsc{Mr. CHOKRI BEN ROMDHANE}
+}
+
+
+\newcommand{\juryMemberOne} {%
+  \textbf{Encadrant ISET}: \textsc{Mr. Bassem BOUGHZELA}
+}
+
+
+%\newcommand{\Encadrant} {%
+  %Mr Bassem \textsc{Boughzala}%
+%}
+%\newcommand{\juryMemberTwoDesc} {%
+ % Reviewer% Examiner, Reporter
+%}
+
+%\newcommand{\juryMemberThree} {%
+%	M. Ben Foulen \textsc{Fouleni}%
+%}
+%\newcommand{\juryMemberThreeDesc} {%
+%	Supervisor% Examiner, Reporter
+%}
+
+%\newcommand{\juryMemberFour} {%
+%	M. Ben Foulen \textsc{Fouleni}%
+%}
+%\newcommand{\juryMemberFourDesc} {%
+%	Mentor% Examiner, Reporter
+%}
+
+
+\newcommand{\specialcell}[1]{%
+  \begin{tabularx}{\textwidth}{@{}X@{}}#1\end{tabularx}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add your own commands here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\MyCommand} {%
+  Does nothing really%
+}
+
+
+% used in maketitle
+\title{\reportSubject}
+\vspace{5pt}
+\author{\reportAuthor}
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% documentation: http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+%\usepackage{sagetex}
+
+\hypersetup{
+  pdftitle={\reportTitle~-~\reportSubject},
+  pdfauthor={\reportAuthor},
+  pdfsubject={\reportSubject},
+  pdfkeywords={report} {internship} {pfe} {enis}
+}
+
+\usepackage{graphics}
+\usepackage{graphicx}
+
+
+\usepackage[acronym,toc,section=chapter]{glossaries}
+\makeglossaries
+
+\newacronym{abc}{ABC}{A contrived acronym}
+\newacronym{efg}{EFG}{Another acronym}
+\newacronym{svm}{SVM}{Support Vector Machines}
+
+\pagenumbering{roman} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\begin{document}
+%\thispagestyle{empty}
+\begin{titlepage}
+\begin{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\includegraphics[scale=0.25]{embleme.jpg}
+
+
+{%
+  \fontsize{9pt}{9pt}\selectfont%
+  \begin{tabular}{c}
+    R\'epublique Tunisienne \\
+    Minist\`ere de l'Enseignement Supérieur et de la Recherche Scientifique \\%
+    \ESSAI{}\\ 
+  \end{tabular}
+}
+\vspace{10pt}
+
+
+
+\includegraphics[scale=0.54]{iset.jpg}
+\vspace{5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE PAGE CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ {%
+  \renewcommand*{\familydefault}{\defaultFont}
+  \fontsize{46pt}{46pt}\selectfont%
+  % MEMOIRE\\%
+  %\reportTitle{}%\\\textsc{Report}\\%
+}
+
+\vspace{5pt}
+
+
+{\textit{Rapport de Projet de Fin d'Etudes}}\\
+
+\vspace{5pt}
+{\textbf{\large Licence en Technologies de l'Informatique:  Développement des systèmes d'Information (DSI)}}\\
+\vspace{5pt}
+\includegraphics[scale=0.4]{logo-essai.png}\\
+
+
+
+
+%\textbf{\textit{Sous la direction de}}\\
+
+ {%
+	\fontsize{11pt}{11pt}\selectfont%
+	%{\bfseries\Large\sc \Encadrant}\\
+}%
+ {%
+  \renewcommand*{\familydefault}{\defaultFont}
+  \fontsize{27pt}{27pt}\selectfont%
+  \rule{1\textwidth}{.4pt}\\
+  
+  \reportSubject{}\\%
+ 
+  \rule{1\textwidth}{.4pt}
+}
+
+\vspace{5pt}
+%Soutenu le\, \dateSoutenance\,\, %devant le Jury compos\'e de :\\
+\textbf{\textit{Réalisé par}}\\
+\vspace{5pt}
+
+{%
+	\fontsize{11pt}{11pt}\selectfont%
+	{\bfseries\Large\sc \reportAuthor}\\
+}%
+\vspace{5pt}
+\textbf{\textit{Encadré par:}}\\
+\vspace{5pt}
+\juryPresident{}\\
+
+\juryMemberOne{}
+
+%Soutenu le \dateSoutenance, devant la commission d'examen:\\
+
+\begin{tabular}{p{0.3\linewidth} p{0.15\linewidth}}
+%  \juryPresident{} & \juryPresidentDesc{}\\
+  %\juryMemberOne{} & \juryMemberOneDesc{}\\
+ % \juryMemberTwo{} & \juryMemberTwoDesc{}\\
+ % \juryMemberThree{} & \juryMemberThreeDesc{}\\
+%  \juryMemberFour{} & \juryMemberFourDesc{}\\
+\end{tabular}
+
+%\vfill
+
+
+\textbf{\textit{Projet de Fin d'Etudes fait au}}\\
+
+\studyDepartment\\
+\vspace{25pt}
+\textbf{Code PFE} : DSI-22-08~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\textbf{Année universitaire} : 2021/2022
+%\includegraphics[scale=0.4]{logo-studyDepartment.jpg}
+\end{center}
+\end{titlepage}
+
+% ###############################
+% # HELP COMMANDS               #
+% ###############################
+%
+% -1 \part{part}
+%  0 \chapter{chapter}
+%  1 \section{section}
+%  2 \subsection{subsection}
+%  3 \subsubsection{subsubsection}
+%  4 \paragraph{paragraph}
+%  5 \subparagraph{subparagraph}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dédicace et Remerciements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter*{Dedication}
+\chapter*{D\'edicace}
+%\addcontentsline{toc}{chapter}{Dedication}
+\thispagestyle{empty}
+%
+%For all they have endured to satisfy all my needs and wishes
+
+\begin{center}
+{\it 
+	
+A ... pour son(leur) sacrifice et son(leur) soutien, \\
+en témoignage de mon infinie reconnaissance et mon profond attachement \\
+\vspace{1cm}
+A tous ceux qui me sont chers...
+
+}
+\end{center}
+%
+%\nopagebreak{%
+% And maybe a quote here
+% \raggedright\hspace{5.75cm} To all of you,~\\
+%\raggedright\hspace{7.75cm} I dedicate this work.
+%  \raggedleft\normalfont\large\itshape{} \reportAuthor\par%
+%}
+%
+%\cleardoublepage%
+
+%\chapter*{Thanks}
+\chapter*{Remerciements}
+%\addcontentsline{toc}{chapter}{Thanks}
+\thispagestyle{empty}
+%
+%Au terme de ce travail (A l'issue de ce travail), je tiens à remercier M., Mme, Pr., Dr. pour sa disponibilité et ses conseils judicieux. \\
+A l'heure où ce travail s'achève, je suis heureuse de pouvoir exprimer ici ma gratitude envers tous ceux qui ont contribué de près ou de loin à son accomplissement.\\
+Tout d'abord, je tiens à remercier vivement mon encadrant académique Monsieur Bassem Boughzela qui a accepté de diriger ce travail et l'a enrichi par ses conseils et ses recommandations pertinentes. Je tiens à le remercier vivement pour ses précieux conseils et orientations, son soutien continu et surtout la confiance qu'il m'a accordée.\\
+J'ai eu l'honneur d'avoir été dirigée du côté technique par Monsieur Chokri Ben Romdhane. Je lui témoigne toute ma gratitude pour ses encouragements, ses remarques constructives et sa disponibilité.\\
+Merci à tout le personnel du  Centre National Universitaire de Documentation Scientifique et
+Technique (CNUDST), pour leur accueil, leur soutien et leur gentillesse.\\
+Je voudrais aussi exprimer ma gratitude à tous mes enseignants et mes collègues de l'Institut Supérieur des Etudes Technologiques de Rades (ISET Rades).
+%Je n'aurais jamais pu réaliser ce projet sans la précieuse aide et sans le soutien d'un grand nombre de personnes dont la générosité, la bonne humeur et l'intérêt manifestés à l'égard de mon PFE m'ont permis de progresser. \\
+
+%En premier lieu, je tiens à remercier mon encadrant universitaire, \juryMemberFour{}, pour la confiance qu'il m'a accordée en acceptant d'encadrer ce travail, pour ses multiples conseils et pour toutes les heures qu'il a consacrées à diriger ce travail. \\ 
+
+%Je souhaiterais exprimer ma gratitude à \juryMemberThree{}, pour m’avoir donné envie de réaliser un mémoire sur ... au sein de \og \studyDepartment \fg. Je le remercie également pour son accueil chaleureux à chaque fois que j'ai sollicité son aide, ainsi que pour ses multiples encouragements. J’ai été extrêmement sensible à ses qualités humaines d'écoute et de compréhension tout au long de ce travail de mémoire. \\
+
+%J'aimerais également dire à \juryPresident{} à quel point je suis honorée pour avoir accepté de présider ce jury de PFE. Je suis infiniment gré à  \juryMemberOne{} de s’être rendu disponible et d’avoir accepté la fonction de rapporteur. De même, je suis particulièrement reconnaissant(e) à (\juryMemberTwo{} de l'intérêt qu'il/elle a manifesté à l'égard de ce projet en s'engageant à être rapporteur. \\
+
+%Ma reconnaissance va à ceux qui ont plus particulièrement assuré le soutien affectif de ce travail : mes enseignants ainsi que mes amis. Mes parents... 
+
+
+\input{abstract.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Divers chapitres
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+%\addcontentsline{toc}{chapter}{\contentsname}
+
+\listoffigures
+%\addcontentsline{toc}{chapter}{Liste des Figures}
+\listoftables
+%\addcontentsline{toc}{chapter}{Liste des Tableaux}
+%\listofalgorithms
+%\addcontentsline{toc}{chapter}{Liste des algorithmes}
+\cleardoublepage
+
+\newpage
+\pagenumbering{arabic}
+\chapter*{Introduction Générale}
+\label{chap:general_intorduction}
+\input{introduction.tex}
+
+
+\chapter{Cadre général du projet }%
+\label{chap:chapterone}
+\input{chapitre1.tex}
+
+%\chapter{Méthodologies utilisées}%
+%\label{chap:2}
+%\input{chapitre2.tex}
+
+
+\chapter{Planification du projet}%
+\label{chap:2}
+\input{chapitre2.tex}
+\chapter{Sprint 1: Gestion de thème de formation}%
+\label{chap:3}
+\input{Chapitre3.tex}
+\chapter{Sprint 2: Gestion et consultation de formation}%
+\label{chap:4}
+\input{Chapitre4.tex}
+\chapter{Sprint 3: Inscription et interaction à une formation en ligne}%
+\label{chap:5}
+\input{Chapitre5.tex}
+\chapter*{Conclusion Générale}
+\label{chap:Conclusion Générale}
+\markboth{\MakeUppercase{Conclusion Générale}}{}%
+\addcontentsline{toc}{chapter}{Conclusion Générale}
+Ce travail est l'aboutissement de trois années de formation en technologie de l'informatique, spécialité DSI à ISET Rades.\\
+Cette formation s'est achevée par un stage de fin d'études (PFE) effectué au sein du CNUDST durant la période qui s'est étalée entre 11/04/2022 et 09/09/2022. Au terme duquel, nous avons été amenés à concevoir et implémenter un thème et un plugin Wordpress afin de permettre à la société d'accueil de gérer les formations en ligne qu'elle organise périodiquement au profit de la communauté scientifique tunisienne.\\
+Pour atteindre cet objectif, nous avons commencé par analyser le contexte général du projet en effectuant une analyse afin de comprendre les différentes exigences demandées.\\
+Par la suite, nous avons préparé un planning de travail selon l'approche SCRUM.\\ Cette phase fondamentale nous a permis de fixer les objectifs de notre release qui est composée de trois sprints.\\
+Tout au long de cette phase, nous avons pu fixer les acteurs principaux, nous avons spécifié les différents besoins fonctionnels et non fonctionnels, par la suite nous avons construit le backlog du produit pour que nous puissions piloter le projet par l'approche SCRUM.\\
+Ce travail nous a été très instructif de point de vue des connaissances acquises. Il nous a donné l'opportunité pour confirmer une fois de plus nos connaissances dans le développement PHP.\\
+De plus, ce projet nous a donné l'occasion d'étudier et d'utiliser le CMS Wordpress pour développer des plugins.\\
+Certes, comme tout système, cette application n'est pas "exemptus" de limites. Certaines fonctionnalités pourraient être améliorées et donner lieu à plusieurs autres extensions.
+Comme perspective, nous proposons à l'entreprise d'accueil "CNUDST" d'utiliser un framework tel que Laravel au lieu de Wordpress, car ce dernier ne permet pas de répondre à toutes les spécificités demandées.\\
+Aussi nous recommandons vivement l'ajout d'un tableau de bord afin d'assurer la visualisation des données et d'évaluer la situation de l'entreprise d'une manière globale par département, région ou même par équipes.
+ % Ce rapport avait pour objet de décrire les fonctionnements et le rôle du Centre National Universitaire de Documentation Sceintifique et Technique, lieu où j’ai effectué mon stage de perfectionnement.\\
+  %Pendant la période passée au sein de cette entreprise, j’ai eu l’opportunité de mettre en pratique mes
+  %connaissances théoriques et techniques acquises au long de ma formation à ISET Rades.\\
+  %Ce stage représente pour moi une bonne experience dans le monde de développement et de création de
+  %projets.
+
+\newpage
+\appendix
+\addcontentsline{toc}{chapter}{Annexes}
+\markboth{\MakeUppercase{Annexe}}{}
+
+\chapter{Mind Map du projet créé avec Coggle}
+\label{chap:appendix}
+
+
+
+\begin{figure}[!h]
+	\centering
+	{\includegraphics[width=0.95\textwidth]{D) IMAGES/map.png}}
+	\caption{Diagramme du Projet}
+	\label{Org}
+\end{figure}
+%\section{Code R pour les modèles}
+
+ %An appedix if you need it.
+ 
+ %\begin{verbatim}
+%Insérer ici le code !
+% \end{verbatim}
+
+%\section{Librairies utilisées}
+ 
+ % Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ %tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ % quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this, it is auto generated
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\nocite{*}
+
+%\phantomsection{}
+%\addcontentsline{toc}{chapter}{Webography}
+%\printbibliography[title={Webography},type=online]
+
+%\phantomsection{}
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\printbibliography[title={Bibliography},nottype=online]
+
+%\printbibheading %exemple de bibliographie divisée en sections. Pour ajouter des oeuvres non citées,utiliser \nocite
+
+%\printbibliography[keyword=pratique,heading=subbibliography,title={Théories littéraires dans les jeux vidéo}]
+%\printbibliography[keyword=litteraire,heading=subbibliography,title={Narratologie et structuralisme}]
+
+%\printbibliography[keyword=jeu,heading=subbibliography,title={\emph{Games studies}}]
+
+\bibliographystyle{apalike}
+%\bibliographystyle{plain}
+
+\bibliography{Biblio.bib}
+
+%\cleardoublepage%
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+
+\printglossaries
+\printindex
+
+%\input{abstract}
+
+
+\end{document}

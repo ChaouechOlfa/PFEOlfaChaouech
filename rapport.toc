@@ -1,0 +1,82 @@
+\contentsline {section}{References}{i}{}%
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Table des figures}{iv}{chapter*.4}%
+\contentsline {chapter}{Liste des tableaux}{vi}{chapter*.5}%
+\contentsline {chapter}{Introduction}{1}{chapter*.6}%
+\contentsline {chapter}{\numberline {1}Cadre général du projet }{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Présentation de l’entreprise}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Historique}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Organigramme}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Etude de l’existant }{6}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Critique de l'existant}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Solution proposée}{9}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Choix du framework de gestion de projet}{11}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Présentation de l’approche agile}{11}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Méthode SCRUM}{13}{subsection.1.5.2}%
+\contentsline {chapter}{\numberline {2}Planification du projet}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Spécification des besoins}{16}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Les besoins fonctionnels}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Les besoins non fonctionnels}{18}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Modélisation des besoins}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Pilotage du projet avec SCRUM}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Rôles de SCRUM}{20}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Backlog du produit}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}La planification de release}{21}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Durée des sprints}{22}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Planning des sprints}{22}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Environnement de travail}{23}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Environnement matériel}{23}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Environnement logiciel}{23}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Présentation des logiciels et outils utilisés}{23}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}Architecture de l'application}{26}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Architecture physique}{26}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Architecture logique}{26}{subsection.2.7.2}%
+\contentsline {chapter}{\numberline {3}Sprint 1: Gestion de thème de formation}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Sprint Planning Meeting}{28}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Objectif de sprint}{28}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Backlog du premier sprint}{28}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Analyse}{29}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Diagramme de cas d'utilisation}{29}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Description textuelle des cas d'utilisation}{31}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Description textuelle des cas d’utilisation:Ajouter thème}{31}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Description textuelle des cas d’utilisation:Lister et mettre à jour un thème}{31}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Description textuelle des cas d’utilisation:Consulter thème}{32}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Conception}{33}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Diagramme de classes}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Diagramme de séquences}{34}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Réalisation}{36}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {4}Sprint 2: Gestion et consultation de formation}{40}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sprint Planning Meeting}{40}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Objectif de sprint}{40}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Backlog du deuxième sprint}{40}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Analyse}{41}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Diagramme des cas d'utilisation}{41}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Description textuelle des cas d'utilisation}{42}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Cas d'utilisation "Consulter formation"}{42}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Cas d'utilisation "Ajouter formation"}{43}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Cas d'utilisation "Lister formation"}{44}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Conception}{45}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Diagramme des séquences}{45}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Diagramme de classes}{49}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Réalisation}{49}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Description des interfaces}{49}{subsection.4.5.1}%
+\contentsline {chapter}{\numberline {5}Sprint 3: Inscription et interaction à une formation en ligne}{54}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Sprint Planning Meeting}{54}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Objectif de Sprint}{54}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Backlog du troisième Sprint}{54}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Analyse}{55}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Diagramme des cas d'utilisation}{55}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Description textuelle des cas d'utilisation}{57}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Cas d'utilisation "S'inscrire"}{57}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Cas d'utilisation "Noter Formation"}{58}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Conception}{60}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Diagramme de séquences}{60}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Diagramme de classes}{62}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Diagramme de classe complet}{63}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Réalisation}{64}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Description des interfaces}{64}{subsection.5.5.1}%
+\contentsline {chapter}{Conclusion Générale}{68}{chapter*.7}%
+\contentsline {chapter}{Annexes}{69}{chapter*.7}%
+\contentsline {chapter}{\numberline {A}Mind Map du projet créé avec Coggle}{69}{appendix.A}%
+\contentsline {chapter}{Bibliographie}{70}{appendix*.8}%
+\setcounter {tocdepth}{3}
